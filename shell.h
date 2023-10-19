@@ -20,6 +20,7 @@ char *read_line(void);
 char **split_line(char *line);
 int execute_args(char **args);
 int exec_non_builtin(char *args[]);
+char *read_strea(void);
 
 /*---Builtin func---*/
 int own_cd(char **args);

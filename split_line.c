@@ -35,8 +35,9 @@ char **split_line(char *line)
 			tokens = realloc(tokens, sizeof(char *) * bufsize);
 			if (!tokens)
 			{
-				perror("reallocation error in split_line: "
-						"tokens");
+				perror(
+				"reallocation error in split_line: tokens"
+				);
 				exit(EXIT_FAILURE);
 			}
 		}

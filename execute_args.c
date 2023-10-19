@@ -25,7 +25,7 @@ int execute_args(char **args)
 		&own_exit
 	};
 
-	int i = 0;
+	size_t i = 0;
 
 	if (args[0] == NULL)
 		return (-1);

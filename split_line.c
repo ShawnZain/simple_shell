@@ -32,7 +32,7 @@ char **split_line(char *line)
 		if (i >= bufsize)
 		{
 			bufsize += bufsize;
-			tokens = realoc(tokens, sizeof(char *) * bufsize);
+			tokens = realloc(tokens, sizeof(char *) * bufsize);
 			if (!tokens)
 			{
 				perror("reallocation error in split_line: "
